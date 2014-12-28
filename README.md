@@ -1,4 +1,4 @@
 shnappy-emailer
 ===============
 
-Send templated emails via Mandrill
+Send emails via Mandrill

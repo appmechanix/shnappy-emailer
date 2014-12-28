@@ -1,0 +1,30 @@
+{
+  "name": "shnappy-emailer",
+  "version": "0.0.1",
+  "description": "Send emails via Mandrill",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "nodeunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appmechanix/shnappy-emailer.git"
+  },
+  "keywords": [
+    "email",
+    "shnappy",
+    "dwnz",
+    "appmechanix"
+  ],
+  "author": "dwnz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appmechanix/shnappy-emailer/issues"
+  },
+  "homepage": "https://github.com/appmechanix/shnappy-emailer",
+  "dependencies": {
+    "config": "^1.9.0",
+    "handlebars": "^2.0.0",
+    "mandrill-api": "^1.0.41"
+  }
+}
