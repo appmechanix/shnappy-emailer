@@ -3,6 +3,13 @@ shnappy-emailer
 
 Send emails via Mandrill. Saves you having to setup the whole email object each time.
 
+Installing
+==========
+
+```
+npm install shnappy-emailer --save
+```
+
 Sample
 =====
 
