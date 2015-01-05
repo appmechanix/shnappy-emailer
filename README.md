@@ -8,9 +8,7 @@ Sample
 
 ```javascript
 var emailer = require('shnappy-emailer');
-```
 
-```javascript
 var to = {
     email: 'to@example.com',
     name: 'Name'
