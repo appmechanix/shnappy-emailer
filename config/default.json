@@ -1,5 +1,7 @@
 {
-    "Email": {
-        "MandrillKey": "YourMandrillKey - https://mandrillapp.com/"
-    }
+  "Email": {
+    "Address": "hello@shnappy.com",
+    "Name": "Shnappy (DEV)",
+    "MandrillKey": "YourMandrillKey - https://mandrillapp.com/"
+  }
 }

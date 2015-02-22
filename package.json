@@ -1,6 +1,6 @@
 {
   "name": "shnappy-emailer",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Send emails via Mandrill",
   "main": "lib/index.js",
   "scripts": {
