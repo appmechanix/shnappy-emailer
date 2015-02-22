@@ -7,6 +7,7 @@ History
 =======
 
 1.0.0 - Breaking changes. Introduced options to allow sending from another email than in config
+
 0.0.1 - Initial release.
 
 Installing
