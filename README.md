@@ -16,14 +16,24 @@ Sample
 ```javascript
 var emailer = require('shnappy-emailer');
 
-var to = {
-    email: 'to@example.com',
-    name: 'Name'
-};
-
 var message = {
-    text: 'Hello world!',
-    html: '<p>Hello world!</p>'
+    subject: 'Test',
+    html: '<p>Hi</p>',
+    text: 'Hi',
+    to: {
+        name: 'Daniel',
+        email: 'daniel@shnappy.com'
+    }
+}
+
+// These are all optional. Most values will read from config if not provided.
+var options = {
+    from: {
+        name: 'Test',
+        email: 'test@example.com'
+    },
+    replyTo: 'replyto@example.com',
+    sendAt: new Date().toISOString()
 };
 
 emailer.SendEmail(to, 'Subject', message, function(data){
@@ -34,6 +44,6 @@ emailer.SendEmail(to, 'Subject', message, function(data){
 Methods
 =======
 
-SendEmail(toObject, subject, messageObject, callback)
+SendEmail(messageObject, options, callback)
 
-SendEmail(toObject, subject, messageObject, replyToEmail, callback)
+SendEmail(messageObject, callback)
