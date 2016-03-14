@@ -13,11 +13,13 @@ exports.check_that_defaults_from_config_are_applied = function (test) {
             }
         },
         function (options) {
-            test.equal(options.subject, 'Test');
-            test.equal(options.from_name, 'Shnappy (DEV)');
-            test.equal(options.from_email, 'hello@shnappy.com');
+            test.equal(options.content.subject, 'Test');
+            test.equal(options.content.from.name, 'Shnappy (DEV)');
+            test.equal(options.content.from.email, 'hello@shnappy.com');
             test.done();
-        });
+        },
+        true
+    );
 };
 
 exports.check_that_options_are_not_required = function (test) {
@@ -32,10 +34,12 @@ exports.check_that_options_are_not_required = function (test) {
             }
         },
         function (options) {
-            test.equal(options.subject, 'Test');
-            test.equal(options.from_name, 'Shnappy (DEV)');
+            test.equal(options.content.subject, 'Test');
+            test.equal(options.content.from.name, 'Shnappy (DEV)');
             test.done();
-        });
+        },
+        true
+    );
 };
 
 exports.check_that_subject_gets_populated = function (test) {
@@ -50,9 +54,11 @@ exports.check_that_subject_gets_populated = function (test) {
             }
         },
         function (options) {
-            test.equal(options.subject, 'Test');
+            test.equal(options.content.subject, 'Test');
             test.done();
-        });
+        },
+        true
+    );
 };
 
 exports.check_that_from_name_gets_populated = function (test) {
@@ -71,9 +77,11 @@ exports.check_that_from_name_gets_populated = function (test) {
             }
         },
         function (options) {
-            test.equal(options.from_name, 'Daniel');
+            test.equal(options.content.from.name, 'Daniel');
             test.done();
-        });
+        },
+        true
+    );
 };
 
 exports.check_that_from_email_gets_populated = function (test) {
@@ -92,7 +100,9 @@ exports.check_that_from_email_gets_populated = function (test) {
             }
         },
         function (options) {
-            test.equal(options.from_email, 'daniel@shnappy.com');
+            test.equal(options.content.from.email, 'daniel@shnappy.com');
             test.done();
-        });
+        },
+        true
+    );
 };
