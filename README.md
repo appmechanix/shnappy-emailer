@@ -6,7 +6,7 @@ Send emails via Mandrill. Saves you having to setup the whole email object each 
 History
 =======
 
-2.0.0 - Breaking changes. Moved from Mandrill to SparkPost to avoid Mandrill price hike.
+2.0.1 - Breaking changes. Moved from Mandrill to SparkPost to avoid Mandrill price hike.
 
 1.0.0 - Breaking changes. Introduced options to allow sending from another email than in config
 
