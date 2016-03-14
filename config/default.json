@@ -2,6 +2,6 @@
   "Email": {
     "Address": "hello@shnappy.com",
     "Name": "Shnappy (DEV)",
-    "MandrillKey": "YourMandrillKey - https://mandrillapp.com/"
+    "SparkPostKey": "Your SparkPost key"
   }
 }
