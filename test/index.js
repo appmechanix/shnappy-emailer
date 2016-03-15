@@ -12,6 +12,7 @@ exports.check_that_defaults_from_config_are_applied = function (test) {
                 email: 'daniel@shnappy.com'
             }
         },
+        {},
         function (options) {
             test.equal(options.content.subject, 'Test');
             test.equal(options.content.from.name, 'Shnappy (DEV)');
@@ -33,6 +34,7 @@ exports.check_that_options_are_not_required = function (test) {
                 email: 'daniel@shnappy.com'
             }
         },
+        {},
         function (options) {
             test.equal(options.content.subject, 'Test');
             test.equal(options.content.from.name, 'Shnappy (DEV)');
@@ -53,6 +55,7 @@ exports.check_that_subject_gets_populated = function (test) {
                 email: 'daniel@shnappy.com'
             }
         },
+        {},
         function (options) {
             test.equal(options.content.subject, 'Test');
             test.done();
