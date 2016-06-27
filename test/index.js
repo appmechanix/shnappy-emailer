@@ -109,3 +109,28 @@ exports.check_that_from_email_gets_populated = function (test) {
         true
     );
 };
+
+exports.check_that_dont_track_clicks_gets_set = function (test) {
+    lib.SendEmail(
+        {
+            subject: 'Test',
+            html: '<p>Hi</p>',
+            text: 'Hi',
+            to: {
+                name: 'Daniel',
+                email: 'daniel@shnappy.com'
+            }
+        },
+        {
+            track_clicks: false
+        },
+        function (options) {
+            test.equal(options.content.subject, 'Test');
+            test.equal(options.content.from.name, 'Shnappy (DEV)');
+            test.equal(options.content.from.email, 'hello@shnappy.com');
+            test.equal(options.click_tracking, false);
+            test.done();
+        },
+        true
+    );
+};
