@@ -2,6 +2,7 @@
   "Email": {
     "Address": "hello@shnappy.com",
     "Name": "Shnappy (DEV)",
-    "SparkPostKey": "Your SparkPost key"
+    "SparkPostKey": "Your SparkPost key",
+    "LogToKeenIO": true
   }
 }
